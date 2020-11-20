@@ -6,17 +6,17 @@ try :#line:3
     import time #line:9
     from time import sleep #line:10
     import random #line:11
-    import webbrowser #line:12
+    #import webbrowser #line:12
 except :#line:13
     import os #line:14
     os .system ('pip3 install Pyrogram')#line:15
-    os .system ('pip3 install webbrowser')#line:16
+    #os .system ('pip3 install webbrowser')#line:16
 try :#line:19
     f =open ("config.ini")#line:20
     f .close ()#line:21
 except IOError :#line:22
     f =open ('config.ini','w+')#line:23
-    webbrowser .open_new_tab ('https://my.telegram.org/auth')#line:24
+    #webbrowser .open_new_tab ('https://my.telegram.org/auth')#line:24
     api =input ('Введите api_id\n>> ')#line:25
     api_hash =input ('Введите api_hash\n>> ')#line:26
     f .write ("[pyrogram]\napi_id = "+str (api )+"\napi_hash = "+str (api_hash ))#line:27
